@@ -19,6 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
     <header>
@@ -130,21 +134,14 @@
             </g>
           </svg>
         </a>
-        <section class="home-intro">
-            <p class="caveat-font-family">The shine that never hides</p>
-            <div class="carousel-container">
-              <div class="carousel-item">
-                <img src="./assets/img/sliderimg1.jpg" alt="">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/sliderimg2.jpg" alt="">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/sliderimg3.jpg" alt="">
-              </div>
-            </div>
-            <div class="carousel-pagination"></div>
-        </section>
+        <div class="home-intro">
+          <p class="caveat-font-family">The shine that never hides</p>
+        <div class="owl-carousel owl-theme">
+          <img  src="./assets/img/sliderimg1.jpg" alt="">
+          <img  src="./assets/img/sliderimg2.jpg"alt="">
+          <img  src="./assets/img/sliderimg3.jpg" alt="">
+        </div>
+      </div>
 
         <section class="shop-by-category section-container">
           <h2 class="section__title">Shop By Category</h2>

@@ -1,3 +1,12 @@
+$('.owl-carousel').owlCarousel({
+  items:1,
+  loop:true,
+  margin:0,
+  autoplay:true,
+  autoplayTimeout:5000,
+});
+
+
 const header = document.querySelector("header");
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const sectionOne = document.querySelector(".home-intro");
@@ -42,62 +51,6 @@ navToggle.addEventListener("click", () => {
         navDiv.setAttribute('nav-expanded', 'false');
     }
 });
-
-const carousel = document.querySelector('.home-intro');
-const carouselContainer = document.querySelector('.carousel-container');
-const carouselItems = document.querySelectorAll('.carousel-item');
-const pagination = document.querySelector('.carousel-pagination');
-const time = 6000
-
-let currentIndex = 0;
-let slideInterval = setInterval(nextSlide, time);
-
-function createPaginationButton(index) {
-  const button = document.createElement('button');
-  button.classList.add('carousel-pagination-button');
-  if (index === 0) {
-    button.classList.add('active');
-  }
-  button.addEventListener('click', () => {
-    currentIndex = index;
-    updateCarousel();
-  });
-  return button;
-}
-
-for (let i = 0; i < carouselItems.length; i++) {
-  const button = createPaginationButton(i);
-  pagination.appendChild(button);
-}
-
-
-function nextSlide() {
-  currentIndex+=1;
-  if (currentIndex >= carouselItems.length) {
-    currentIndex = 0;
-  }
-  updateCarousel();
-}
-
-function prevSlide() {
-  currentIndex-=1;
-  if (currentIndex < 0) {
-    currentIndex = carouselItems.length-1;
-  }
-  updateCarousel();
-}
-
-function updateCarousel() {
-  carouselContainer.style.transform = `translateX(-${currentIndex * 100}vw)`;
-  const paginationButtons = document.querySelectorAll('.carousel-pagination-button');
-  paginationButtons.forEach((button, index) => {
-    if (index === currentIndex) {
-      button.classList.add('active');
-    } else {
-      button.classList.remove('active');
-    }
-  });
-}
 
 let currentIdx = -1;
 
