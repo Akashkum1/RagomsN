@@ -1,0 +1,32 @@
+.store-locator {
+    margin: 10em 0 4em 0;
+    margin-inline: auto !important;
+    max-width: 800px;
+    padding: 0 4em;
+    text-align: center;
+}
+
+.store-locator h1 {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.store-locator p {
+    margin-bottom: 1em;
+}
+
+.store-locator a {
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    border: solid 1px var(--clr-neutral-900);
+    padding: 0.5em 2em;
+    border-radius: 0.3em;
+}
+
+.store-locator a:hover {
+    background-color: var(--clr-primary-700);
+    color: var(--clr-neutral-100);
+    border: none;
+}
