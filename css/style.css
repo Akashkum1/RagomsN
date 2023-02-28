@@ -118,7 +118,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 2500;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -249,6 +249,11 @@ header {
   .mobile-nav-toggle[aria-expanded="true"]{
     background-image: url('../assets/img/icon-close.svg');
   }
+  .drawer-full-width {
+    transform: translateX(110%);
+    transition: transform 350ms ease-out;
+    overflow-y: auto;
+  }
 
   .drawer-full-width[nav-expanded="true"] {
     display: block;
@@ -256,6 +261,7 @@ header {
     position: absolute;
     inset: 0 0 0 30%;
     z-index: 5000;
+    transform: translateX(0%);
   }
 }
 
@@ -340,7 +346,7 @@ header {
   width: max-content;
   height: max-content;
   bottom: 2em;
-  right: 4em;
+  right: 3em;
   z-index: 100;
   aspect-ratio: 1;
   border: none;
