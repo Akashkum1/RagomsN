@@ -13,7 +13,7 @@ const sectionOne = document.querySelector(".home-intro");
 const navDiv = document.querySelector(".drawer-full-width")
 
 const sectionOneOptions = {
-  rootMargin: "-400px 0px 0px 0px"
+  rootMargin: "-300px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
