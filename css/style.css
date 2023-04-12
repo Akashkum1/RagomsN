@@ -110,11 +110,65 @@ body {
   overflow-x: hidden;
 }
 
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+}
+
+#loading-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Add your loading animation styles here */
+
+}
+
+#loading-animation img {
+  height: 10vh;
+  width: 10vw;
+  animation: scale-down 3s linear infinite;
+}
+
+@keyframes scale-down {
+  0% {
+    scale: 3;
+    opacity: 1;
+  }
+  20% {
+    scale: 2.5;
+    opacity: 0.8;
+  }
+  40% {
+    scale: 2;
+    opacity: 0.6;
+  }
+  60% {
+    scale: 1.5;
+    opacity: 0.4;
+  }
+  80% {
+    scale: 1;
+    opacity: 0.2;
+  }
+  100% {
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+
+
 header {
-  --text: var(--clr-neutral-100);
-  --text-inverse: #333;
-  --background: transparent;
-  --logo-text: var(--clr-neutral-100);
+  --text: var(--clr-neutral-700);
+  --text-inverse: #f4f4f4;
+  --background: var(--clr-neutral-100);
+  --logo-text: var(--clr-primary-400);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -140,6 +194,10 @@ header {
   font-size: 2em;
   color: var(--logo-text);
   font-family: 'Libre Bodoni', serif;
+}
+
+.site-logo--img {
+  height: 2em;
 }
 
 .site-logo p {
@@ -229,6 +287,10 @@ header {
     text-decoration: none;
   }
 
+  .subsection li {
+    margin-bottom: 10px;
+  }
+
   .dropdown a:hover {
     color: var(--clr-neutral-700);
   }
@@ -241,7 +303,8 @@ header {
     display: block;
     position: absolute;
     background-color: transparent;
-    background-image: url('../assets/img/icon-hamburger.svg');
+    /* background-image: url('../assets/img/icon-hamburger.svg'); */
+    background-image: url('../assets/img/icon-hamburger-black.svg');
     background-repeat: no-repeat;
     width: 2rem;
     aspect-ratio: 1;
@@ -327,7 +390,7 @@ header {
   }
 
   .subsection li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .subsection li a{
@@ -416,6 +479,7 @@ header {
   position: relative;
   inset: 0;
   text-align: center;
+  margin-top: 6em;
 }
 
 .home-intro p {

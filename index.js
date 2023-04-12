@@ -12,27 +12,34 @@ const navToggle = document.querySelector('.mobile-nav-toggle');
 const sectionOne = document.querySelector(".home-intro");
 const navDiv = document.querySelector(".drawer-full-width")
 
-const sectionOneOptions = {
-  rootMargin: "-300px 0px 0px 0px"
-};
+window.addEventListener('load', function() {
+  var loadingOverlay = document.getElementById('loading-overlay');
+  setTimeout(() => {loadingOverlay.style.display = 'none'}, 2000 )
+  
+});
 
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled");
-      navToggle.classList.add("nav-scrolled-for-button");
-    } else {
-      header.classList.remove("nav-scrolled");
-      navToggle.classList.remove("nav-scrolled-for-button");
-    }
-  });
-},
-sectionOneOptions);
 
-sectionOneObserver.observe(sectionOne);
+// const sectionOneOptions = {
+//   rootMargin: "-300px 0px 0px 0px"
+// };
+
+// const sectionOneObserver = new IntersectionObserver(function(
+//   entries,
+//   sectionOneObserver
+// ) {
+//   entries.forEach(entry => {
+//     if (!entry.isIntersecting) {
+//       header.classList.add("nav-scrolled");
+//       navToggle.classList.add("nav-scrolled-for-button");
+//     } else {
+//       header.classList.remove("nav-scrolled");
+//       navToggle.classList.remove("nav-scrolled-for-button");
+//     }
+//   });
+// },
+// sectionOneOptions);
+
+// sectionOneObserver.observe(sectionOne);
 
 
 const primaryNav = document.querySelector('.nav__list');

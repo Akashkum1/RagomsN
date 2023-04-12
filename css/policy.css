@@ -1,0 +1,27 @@
+.policy-container {
+  margin: 8em 0 4em 0;
+  margin-inline: auto !important;
+  max-width: 800px;
+  padding: 0 4em;
+}
+
+.policy-container h1 {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+.policy-container h2 {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+.policy-container ol {
+    margin-bottom: 2.5em;
+}
+
+.policy-container ol li {
+    margin-bottom: 1em;
+}
