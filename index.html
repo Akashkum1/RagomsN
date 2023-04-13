@@ -25,6 +25,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
+  <div id="loading-overlay">
+    <div id="loading-animation">
+        <img class="site-logo--img" src="./assets/img/logo1.jpeg" alt="" >
+    </div>
+  </div>
+  
+  <!-- The rest of your HTML -->
+  
     <header>
         <div class="logo-container">
             <a href="#" class="site-logo" aria-label="homepage">
@@ -48,10 +56,15 @@
               </a>
                 <div class="dropdown">
                     <ul class="subsection">
-                        <li><a href="#"> All Clothes</a></li>
-                        <li><a href="#"> Dresses</a></li>
-                        <li><a href="#"> Kurtas</a></li>
-                        <li><a href="#"> Lehnghas</a></li>
+                        <li><a href="#">Shop Alls</a></li>
+                        <li><a href="#">Lehengas</a></li>
+                        <li><a href="#">Bridal Wears</a></li>
+                        <li><a href="#">Sarees</a></li>
+                        <li><a href="#">Blouses</a></li>
+                        <li><a href="#">Kurta Sets</a></li>
+                        <li><a href="#">Gowns</a></li>
+                        <li><a href="#">Bottoms</a></li>
+                        <li><a href="#">Western Wears</a></li>
                     </ul>
                 </div>
                 </li>
@@ -62,42 +75,42 @@
                   </a>
                     <div class="dropdown">
                         <ul class="subsection">
-                            <li><a href="#"> All Clothes</a></li>
-                            <li><a href="#"> Dresses</a></li>
-                            <li><a href="#"> Kurtas</a></li>
+                            <li><a href="#">Shop All</a></li>
+                            <li><a href="#">Blazers</a></li>
+                            <li><a href="#">Jacket Sets</a></li>
+                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="#">Sherwanis</a></li>
+                            <li><a href="#">Shirts</a></li>
                         </ul>
                     </div>
                     
                 </li>
                 <li class="nav__list-item">
-                  <a href="#" class="nav__link">
-                    <span>KIDS</span>
-                    <i class="fa fa-chevron-down"></i>
-                  </a>
-                  <div class="dropdown">
+                  <a href="#" class="nav__link">KIDS</a>
+                  <!-- <div class="dropdown">
                       <ul class="subsection">
-                          <li><a href="#"> All Clothes</a></li>
+                          <li><a href="#">Shop All</a></li>
                           <li><a href="#"> Dresses</a></li>
                           <li><a href="#"> Kurtas</a></li>
                       </ul>
-                  </div>
+                  </div> -->
                   
               </li>
-                <li class="nav__list-item">
+                <!-- <li class="nav__list-item">
                     <a href="#" class="nav__link">
                       <span>WEDDING</span>
                       <i class="fa fa-chevron-down"></i>
                     </a>
                     <div class="dropdown">
                         <ul class="subsection">
-                            <li><a href="#"> Lenghas</a></li>
+                            <li><a href="#"> Lehengas</a></li>
                             <li><a href="#"> Premium Lenghas</a></li>
                             <li><a href="#"> Special Bride Gowns</a></li>
                             <li><a href="#"> Lehnghas</a></li>
                         </ul>
                     </div>
                     
-                </li>
+                </li> -->
                 <li class="nav__list-item">
                   <a href="#" class="nav__link">
                     <span>ACCESSORIES</span>
@@ -137,14 +150,14 @@
         <div class="home-intro">
           <p class="caveat-font-family">The shine that never hides</p>
         <div class="owl-carousel owl-theme">
-          <img  src="./assets/img/sliderimg1.jpg" alt="">
-          <img  src="./assets/img/sliderimg2.jpg"alt="">
-          <img  src="./assets/img/sliderimg3.jpg" alt="">
+          <img  src="./assets/img/slider1.jpg" alt="">
+          <img  src="./assets/img/slidertest2.jpg"alt="">
+          <img  src="./assets/img/IMG_5016.jpg" alt="">
         </div>
       </div>
 
         <section class="shop-by-category section-container">
-          <h2 class="section__title">Shop By Category</h2>
+          <h2 class="section__title">Latest Collection</h2>
           <div class="shop-by-category-grid grid grid-column">
             <div class="card">
               <a href="#">
@@ -188,10 +201,28 @@
             </div>
           </div>
         </section>
+        <section class="sub-category">
+          <div class="sub-category--conatiner">
+            <div class="sub-category--inner-container"></div>
+            <img src="./assets/img/slider3s.jpg"" />
+            <div class="sub-category-info">
+              <p>WOMENSWEAR</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="sub-category--conatiner">
+            <div class="sub-category--inner-container"></div>
+            <img src="./assets/img/abc.webp" />
+            <div class="sub-category-info">
+              <p>MENSWEAR</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+        </section>
 
         <section class="category-section">
-            <img src="./assets/img/w1.jpg" alt="">
-            <img class="second-img" src=" ./assets/img/w2.jpg" alt="">
+            <img loading="lazy" src="./assets/img/d1.jpg" alt="">
+            <img loading="lazy" class="second-img" src="./assets/img/trendy3.JPG" alt="">
             <div class="category-section-info-wrapper">
               <h2>Trendy Casual Wear</h2>
               <p>No one can match the coolness when you wear this dresses.</p>
@@ -203,8 +234,8 @@
         </section>
 
         <section class="category-section-reversed margintop">
-            <img class="third-column" src=" ./assets/img/e1.jpg" alt="">
-            <img class="second-img second-column" src=" ./assets/img/e2.jpg" alt="">
+            <img loading="lazy" class="third-column" src=" ./assets/img/e1.jpg" alt="">
+            <img  loading="lazy" class="second-img second-column" src=" ./assets/img/e2.jpg" alt="">
             <div class="category-section-info-wrapper first-column">
               <h2>Bridal Collections</h2>
               <p>Lets the Indian-ness show! Life is too short to blend in</p>
@@ -216,8 +247,8 @@
         </section>
 
         <section class="category-section margintop marginbottom">
-            <img src=" ./assets/img/m1.jpg" alt="">
-            <img class="second-img" src=" ./assets/img/m2.jpg" alt="">
+            <img loading="lazy" src=" ./assets/img/m1.jpg" alt="">
+            <img loading="lazy" class="second-img" src=" ./assets/img/m2.jpg" alt="">
             <div class="category-section-info-wrapper">
               <h2>Authentic Menswear</h2>
               <p>Nothing is noteworthy more than your outfit.</p>
@@ -246,8 +277,8 @@
             <i class="fa fa-chevron-down"></i>
           </button>
           <ul class="link-margin-bottom">
-            <li><a href="#">Delivery and Shipping</a></li>
-            <li><a href="#">Return & Exchange Policy</a></li>
+            <li><a href="./deliveryandpayments.html">Delivery and Payments</a></li>
+            <li><a href="./returnandexchangepolicy.html">Return & Exchange Policy</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
         </div>

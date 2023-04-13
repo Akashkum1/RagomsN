@@ -22,86 +22,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 </head>
 <body>
-    <header class="nav-scrolled">
-        <div class="logo-container">
-            <a href="index.html" class="site-logo" aria-label="homepage">
-                <h1>RAGOMS</h1>
-                <!-- <p>The shine that never hides</p> -->
-            </a>
-        </div>
+  <header>
+    <div class="logo-container">
+        <a href="./index.html" class="site-logo" aria-label="homepage">
+            <h1>RAGOMS</h1>
+            <!-- <p>The shine that never hides</p> -->
+        </a>
+    </div>
 
-        <button class="mobile-nav-toggle nav-scrolled-for-button" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-        </button>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+      </button>
+      <div class="drawer-full-width" nav-expanded="false"></div>
 
-        <nav class="main-nav">
-            <ul id="primary-navigation" class="nav__list" data-visible="false">
+
+    <nav class="main-nav">
+        <ul id="primary-navigation" class="nav__list" data-visible="false">
+        <li class="nav__list-item">
+          <a href="#" class="nav__link">
+            <span>WOMEN</span>
+            <i class="fa fa-chevron-down"></i>
+          </a>
+            <div class="dropdown">
+                <ul class="subsection">
+                    <li><a href="#">Shop Alls</a></li>
+                    <li><a href="#">Lehengas</a></li>
+                    <li><a href="#">Bridal Wears</a></li>
+                    <li><a href="#">Sarees</a></li>
+                    <li><a href="#">Blouses</a></li>
+                    <li><a href="#">Kurta Sets</a></li>
+                    <li><a href="#">Gowns</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Western Wears</a></li>
+                </ul>
+            </div>
+            </li>
             <li class="nav__list-item">
+              <a href="#" class="nav__link">
+                <span>MEN</span>
+                <i class="fa fa-chevron-down"></i>
+              </a>
+                <div class="dropdown">
+                    <ul class="subsection">
+                        <li><a href="#">Shop All</a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Jacket Sets</a></li>
+                        <li><a href="#">Kurtas</a></li>
+                        <li><a href="#">Sherwanis</a></li>
+                        <li><a href="#">Shirts</a></li>
+                    </ul>
+                </div>
+                
+            </li>
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">KIDS</a>
+              <!-- <div class="dropdown">
+                  <ul class="subsection">
+                      <li><a href="#">Shop All</a></li>
+                      <li><a href="#"> Dresses</a></li>
+                      <li><a href="#"> Kurtas</a></li>
+                  </ul>
+              </div> -->
+              
+          </li>
+            <!-- <li class="nav__list-item">
                 <a href="#" class="nav__link">
-                    WOMEN
+                  <span>WEDDING</span>
+                  <i class="fa fa-chevron-down"></i>
                 </a>
                 <div class="dropdown">
                     <ul class="subsection">
-                        <li><a href="#"> All Clothes</a></li>
-                        <li><a href="#"> Dresses</a></li>
-                        <li><a href="#"> Kurtas</a></li>
+                        <li><a href="#"> Lehengas</a></li>
+                        <li><a href="#"> Premium Lenghas</a></li>
+                        <li><a href="#"> Special Bride Gowns</a></li>
                         <li><a href="#"> Lehnghas</a></li>
                     </ul>
                 </div>
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">MEN</a>
-                    <div class="dropdown">
-                        <ul class="subsection">
-                            <li><a href="#"> All Clothes</a></li>
-                            <li><a href="#"> Dresses</a></li>
-                            <li><a href="#"> Kurtas</a></li>
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li class="nav__list-item">
-                  <a href="#" class="nav__link">KIDS</a>
-                  <div class="dropdown">
-                      <ul class="subsection">
-                          <li><a href="#"> All Clothes</a></li>
-                          <li><a href="#"> Dresses</a></li>
-                          <li><a href="#"> Kurtas</a></li>
-                      </ul>
-                  </div>
-                  
-              </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">WEDDING</a>
-                    <div class="dropdown">
-                        <ul class="subsection">
-                            <li><a href="#"> Lenghas</a></li>
-                            <li><a href="#"> Premium Lenghas</a></li>
-                            <li><a href="#"> Special Bride Gowns</a></li>
-                            <li><a href="#"> Lehnghas</a></li>
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">ACCESSORIES</a>
-                    <div class="dropdown">
-                        <ul class="subsection">
-                            <li><a href="#">Purses</a></li>
-                            <li><a href="#">Dupattas</a></li>
-                            <li><a href="#">Jwellery</a></li>
-                            <li><a href="#">Printed Bags</a></li>
-                        </ul>
-                    </div>
+                
+            </li> -->
+            <li class="nav__list-item">
+              <a href="#" class="nav__link">
+                <span>ACCESSORIES</span>
+                <i class="fa fa-chevron-down"></i>
+              </a>
+                <div class="dropdown">
+                    <ul class="subsection">
+                        <li><a href="#">Purses</a></li>
+                        <li><a href="#">Dupattas</a></li>
+                        <li><a href="#">Jwellery</a></li>
+                        <li><a href="#">Printed Bags</a></li>
+                    </ul>
+                </div>
 
-                </li>
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link">ABOUT</a>
-                </li>
-            </ul>
-        </nav>
-        
-      </header>
+            </li>
+            <li class="nav__list-item">
+                <a href="aboutus.html" class="nav__link">ABOUT</a>
+            </li>
+        </ul>
+    </nav>
+    
+  </header>
   
     <main>
         <a class="whatsapp-icon" href="https://api.whatsapp.com/send?phone=7972017708&amp;text=Hi!%20I%20want%20to%20shop%20on%20the%20RAGOMS%20website">
