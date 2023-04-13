@@ -132,7 +132,7 @@ body {
 #loading-animation img {
   height: 10vh;
   width: 10vw;
-  animation: scale-down 3s linear infinite;
+  animation: scale-down 4s linear infinite;
 }
 
 @keyframes scale-down {
